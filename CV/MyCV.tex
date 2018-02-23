@@ -1,0 +1,382 @@
+%%% LaTeX Template: Designer's CV
+%%%
+%%% Source: http://www.howtotex.com/
+%%% Feel free to distribute this template, but please keep the referal to HowToTeX.com.
+%%% Date: March 2012
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document properties and packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,final]{memoir}
+
+
+% misc
+\renewcommand{\familydefault}{bch}	% font
+\pagestyle{empty}					% no pagenumbering
+\setlength{\parindent}{0pt}			% no paragraph indentation
+
+
+% required packages (add your own)
+\usepackage{flowfram}
+\usepackage{comment}
+% column layout
+\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}% margins
+\usepackage{graphicx}										% figures
+\usepackage{url}											% URLs
+\usepackage[usenames,dvipsnames]{xcolor}					% color
+\usepackage{multicol}										% columns env.
+	\setlength{\multicolsep}{0pt}
+\usepackage{paralist}										% compact lists
+\usepackage{tikz}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Create column layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% define length commands
+\setlength{\vcolumnsep}{\baselineskip}
+\setlength{\columnsep}{\vcolumnsep}
+
+% frame setup (flowfram package)
+% left frame
+\newflowframe{0.2\textwidth}{\textheight}{0pt}{0pt}[left]
+	\newlength{\LeftMainSep}
+	\setlength{\LeftMainSep}{0.2\textwidth}
+	\addtolength{\LeftMainSep}{1\columnsep}
+ 
+% small static frame for the vertical line
+\newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
+ 
+% content of the static frame
+\begin{staticcontents}{1}
+\hfill
+\tikz{%
+	\draw[loosely dotted,color=RoyalBlue,line width=1.5pt,yshift=0]
+	(0,0) -- (0,\textheight);}%
+\hfill\mbox{}
+\end{staticcontents}
+ 
+% right frame
+\addtolength{\LeftMainSep}{1.5pt}
+\addtolength{\LeftMainSep}{1\columnsep}
+\newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% define macros (for convience)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Sep}{\vspace{1.5em}}
+\newcommand{\SmallSep}{\vspace{0.5em}}
+
+\newenvironment{AboutMe}
+	{\ignorespaces\textbf{\color{RoyalBlue} About me}}
+	{\Sep\ignorespacesafterend}
+	
+\newcommand{\CVSection}[1]
+	{\Large\textbf{#1}\par
+	\SmallSep\normalsize\normalfont}
+
+\newcommand{\CVItem}[1]
+	{\textbf{\color{RoyalBlue} #1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Left frame
+%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{flushright}\small
+
+	\includegraphics[width=0.6\columnwidth]{photo.jpg}\\[\baselineskip] % Your photo
+	 \CVItem{\\Email} \\
+	 
+	\url{y.mirmohammad@yahoo.com}  \\
+	 \CVItem{\\Phone:} \\
+         (+98) 912 063 0714  \\
+
+%	\CVItem{Address:} \\
+
+	
+\end{flushright}\normalsize
+\framebreak
+
+
+% Right frame
+%%%%%%%%%%%%%%%%%%%%
+\Huge\bfseries {\color{RoyalBlue} Yasaman Mirmohammad} \\
+\Large\bfseries  Undergraduate Hardware Engineer \\
+
+\normalsize\normalfont
+
+% About me
+%\begin{AboutMe}
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel %bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin %nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. %Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus %ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu %rhoncus nec, pellentesque vitae sem.
+%\end{AboutMe}
+
+\CVSection{Interests}
+	\CVItem{Professional}
+	\\
+ Machine Learning, Neuroscience,Pattern Recognition , Cognitive Science, Big Data \\
+	   
+	\\
+	\CVItem{Personal}
+	\\
+	•	Painting , Badminton , Music ,  Philosophy, Language  and communication , History
+	
+\Sep
+
+% Experience
+\CVSection{Education}
+\CVItem{2015 - 2019, B.Sc. in Computer Hardware Engineering}\\
+AmirKabir University of Technology (Tehran Polytechnic), Tehran, Iran
+GPA(up to now): 14.37 \\
+Total Passed Credits: 81
+\SmallSep
+
+\CVItem{2008 - 2015, Diploma in Physics and Mathematics Discipline}\\
+Sama School(2008-2014) , Sadra School(2014-2015)
+
+GPA: 19.78/20
+\Sep
+
+\CVSection{Honors and Awards}
+\begin{itemize}
+	\item Ranked top 0.4 \% among more than 180,000 students participated
+in the nationwide entrance examination of undergraduate studies
+in Iranian universities (2015) 
+
+	\item accepted for 2nd level of computer Olympiad (2013)
+	\item Member of National Organization for Bilingual Schools (2007-2014)
+ 
+\end{itemize}
+
+\Sep
+
+
+
+\CVSection{Teaching Experience}
+	\begin{itemize}
+		\item  Teacher Assistant , Physics , Discrete Mathematics , Calculus ,  Algebra & Geometry, Under Supervision of Dr m.Rashedi and Mr.A.jamshidi
+		Sadra High School (June 2016 – November2016)
+	\item  Teacher Assistant, Discrete Mathematics, Amirkabir University of technology, Under Supervision of prof.ms.fallah (Spring 2017)
+	\end{itemize}
+\Sep
+
+\newpage
+\normalsize\normalfont
+\framebreak
+\framebreak
+
+
+\CVSection{Skills}
+\CVItem{Programming}
+\begin{multicols}{3}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+	\item Python3.5+2.7:
+	Numpy,Pandas,...
+	\item Java
+	\item C and C++
+
+	
+\end{compactitem}
+\end{multicols}
+\SmallSep
+\CVItem{Web and DB Technologies}
+
+\begin{multicols}{3}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+	\item HTML+CSS(Familiar)
+	\item Javascript(Familiar)
+	\item Wordpress+Basic Database(Familiar)
+\end{compactitem}
+\end{multicols}
+\SmallSep
+
+\CVItem{Design And Description}
+\begin{multicols}{3}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+
+	\item VHDL
+	\item Verilog
+	\item PSpice+OrcadCapture
+\end{compactitem}
+\end{multicols}
+\SmallSep
+
+\CVItem{Operating Systems}
+\begin{multicols}{3}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+	\item Linux
+	\item Windows
+\end{compactitem}
+\end{multicols}
+\SmallSep
+\CVItem{Typesetting}
+\begin{multicols}{3}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+	\item LaTeX
+	\item Microsoft Word
+\end{compactitem}
+\end{multicols}
+\SmallSep
+\CVItem{Others}
+\begin{multicols}{3}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+	\item Qt
+	\item IntelliJ
+	\item Pycharm
+    	\item  CodeBlocks
+    		\item Devc++
+    			\item Netbeans
+    			\item Eclipse
+    			\item Jupyter Notebook:
+    			*for Data Analysis
+    			
+    
+    			
+    		
+    			
+\end{compactitem}
+\end{multicols}
+
+
+\SmallSep
+\CVItem{Language Skills}
+	\begin{itemize}[$\circ$]
+
+\item English: 
+
+Upper Intermediate, fluent, writing and comprehension
+(EnglishStudent at Kish institute(2009-2013) Teenage Courses (Pacesetter)  \\
+2016-Present :Adults Courses (Headway Intermediate3)
+\item French: Beginner, Learning
+	\end{itemize}
+
+\Sep 
+
+\CVSection{Projects}
+\begin{itemize}
+
+	\item Data Structure :
+		\begin{itemize}[$\circ$]
+		\item	search engine using inverted index algorithm - C++.
+	     \item   Finite-State Automata - Java
+		\end{itemize}
+		
+	\item Advanced Computer Programming:
+		\begin{itemize}[$\circ$]
+		\item  Implementation of a graphical game (BattleShip-Online) - Java.
+     	\item Implementation of a simple image editor - Java.
+	    \item Implementation of a simple Encryption and encoding System  - Java.
+		\end{itemize}
+		
+	\item Principles of Computer and Programming : 
+	
+	living cell simulation - C.
+   	\item Logic Design : 
+   	Designing a Traffic Light System -Verilog
+   	\item Computer Architecture and design :
+   		\begin{itemize}[$\circ$]
+		\item[] Basic Computer),Compiler,Cache,Pipeline(VHDL)
+		
+\end{itemize}
+
+
+
+
+\newpage
+\normalsize\normalfont
+\framebreak
+\framebreak
+
+\\
+
+\item Operating Systems:
+\begin{itemize}[$\circ$]
+\item[Multiprocessing,Multithreading in Windows and Linux(C)]
+		\end{itemize}
+		
+	\item Design Automation:
+		\begin{itemize}[$\circ$]
+		\item [*Phase1:Implementation of a car parking system(VHDL).]
+     	\item [*Phase2:Implementation of a co-software,hardware design using]
+     	      Microblaze(VHDL).
+	    \item[*Phase3:Implementation of a Plant-Watering System with a moisturizing]
+	          detection system(VHDL)
+	          
+		\end{itemize}
+	
+		
+    	\item Advanced Mathematics: 
+	    \begin{itemize}[$\circ$]
+        \item[*Phase1:
+		      Analyzing Distribution categories of a two class  problem And] PCA(Python,MATLAB)]
+		      \item [*Phase2:
+     	     Facial Recognition with Singular Value Decomposition(Python)]
+     	     based on 	\href{https://link.springer.com/chapter/10.1007/978-1-4020-6264-3_26}{paper}]
+     
+     
+	\end{itemize}
+	
+
+\Sep
+
+\CVSection{Challenges and Contests}
+\begin{itemize}[$\circ$]
+\item [*Amirkabir First Data mining Challenge(Fall 2017):]
+    	
+	   
+\item [*Analyzing the bank customer's  information]
+		\end{itemize}
+		
+		\begin{itemize}[$\circ$]
+		\item [*Deca Dataminig challenge, Sharif University of Technology, 
+		Winter2018]
+	
+\item [*I have been working on Data mining and data analysis concepts on \href{http://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf}
+		{This}] 
+
+	\item[*I have been working on \href
+	    {http://www.ias.tu-darmstadt.de/uploads/Publications/Kober_IJRR_2013.pdf}
+	    {This Paper} as my Representation and Research] Course project,2017
+	    \item[*Codeacademy courses , 2015-2017]
+        \item[*Coursera Machinelearning course By Andrew NG,University of Stanford,]Fall 2017.
+        \item[*Kaggle Machine Learning and Deep Learning Course , Winter 2018]
+        \item[*Coursera Deep Learning and Neural Network,University of Toronto]
+        
+\Sep
+
+\\
+======================================
+\newline
+
+\CVItem {All available on :}
+  \CVItem { https://github.com/Yasaman1997}
+
+
+
+ \end{itemize}	
+  \end{itemize}	
+\end{document}
+
+	
+\Sep
+
+
+		
+
+
