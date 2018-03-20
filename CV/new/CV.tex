@@ -1,0 +1,466 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{ Yasaman Mirmohammad}
+\newcommand{\CVTitle}{Yasaman's CV for Acme Corporation}
+\newcommand{\CVNote}{CV compiled on {\today} for Acme Corporation}
+\newcommand{\CVWebpage}{}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.com/maps/place/Amirkabir+University+of+Technology+(Polytechnic}
+{Department of Computer Engineering and Information Technology, Amirkabir University of Technology, 424 Hafez Ave., Tehran, Iran}
+\par
+\,\SubBulletSymbol\,
+\href{y.mirmohammad@yahoo.com}
+{y.mirmohammad@yahoo.com}
+\,\SubBulletSymbol\,
+\href{ys.m@aut.ac.ir}
+{ys.m@aut.ac.ir}
+\,\SubBulletSymbol\,
+
++98\,(912)\,0630714
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+\Section
+{RESEARCH INTERESTS}
+{RESEARCH INTERESTS}
+{PDF:Interests}
+
+\Entry
+
+\BulletItem
+Machine Learning
+\BulletItem
+Pattern Recognition
+\BulletItem
+Deep Learning And Neural Network
+\BulletItem
+Neuroscience and Cognitive Science
+\BulletItem
+Image Processing
+\BulletItem
+Computer Vision
+\BulletItem
+Big data Analysis
+
+
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{http://www.aut.ac.ir}
+{\textbf{Amirkabir University of Technology}},
+Tehran, Iran
+
+\Gap
+\BulletItem
+B.S. in
+\href{http://ceit.aut.ac.ir}
+{Computer Engineering}, 
+  GPA: 14.37 / 20
+  Total Passed Credits: 81
+\hfill
+\DatestampYM{2015}{09} -- \DatestampYM{2019}{09} 
+
+\href{}
+{\textbf{Sama School(2008-2014) , Sadra School(2014-2015)}},
+Tehran, Iran
+\BulletItem
+Diploma in Mathematics and Physics Discipline, 
+GPA: 19.78/20
+\hfill
+\DatestampY{2010}--
+\DatestampY{2015}
+
+\begin{Detail}
+
+\end{Detail}
+
+
+\BullENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\href{}
+{\textbf{Bio Inspired System Design LAb}} 
+\newline (Amirkabir University of Technology,
+Iran,Tehran)
+\hfill
+\DatestampYM{2018}{03} --
+Now
+
+\begin{Detail}
+\SubBulletItem
+Project: Implementing Deep Learning Object Recognition on NAO
+
+%\SubBulletItem
+%Supervisors:
+
+%\SubBulletItem
+%Focus:
+
+\end{Detail}
+
+
+\Gap
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Honors \&\newline
+Awards}
+{Honors \& Awards}
+{PDF:HonorsANDAwards}
+
+\BulletItem
+Ranked top 0.4 \% among more than 180,000 students participated
+in the nationwide entrance examination of undergraduate studies
+in Iranian universities  
+\hfill
+\DatestampY{2014} --
+\DatestampY{2015}
+
+\BulletItem
+ accepted for 2nd level of computer Olympiad 
+\hfill
+\DatestampYMD{2013}
+
+
+\BulletItem
+ Member of National Organization for Bilingual Schools
+\hfill
+\DatestampYMD{2007} --
+\DatestampYMD{2014}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Teaching Experience}
+{Teaching Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\textbf{Discrete Mathematics},Amirkabir University of Technology
+\hfill
+Spring \DatestampYM{2017}
+
+\BulletItem
+Instructor: Dr.m.s.Fallah
+
+
+\Entry
+\textbf{Discrete Mathematics,Algebra and Geometry},Sadra School
+\hfill
+Fall \DatestampYM{2016}
+
+\BulletItem
+Instructor: Dr.m.Rashedi,
+Fall \DatestampYM{2016}
+
+
+\Entry
+\textbf{Fundamentals of Physics}
+\hfill
+Fall \DatestampYM{2016}
+
+\BulletItem
+Instructor: A.Jamshidi
+Fall \DatestampYM{2016}
+
+
+% Manual page break.
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Persian: Native language.
+
+\Gap
+\BulletItem
+English: Fluent (speaking, reading, writing).
+
+\Gap
+\BulletItem
+French: Basic (reading); basic (speaking, writing).
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+
+\begin{itemize}
+\item{\LaTeX}
+\item MATLAB,
+\item Python(Scikit-Learn,Pandas,OpenCV,...)
+\item HTML+CSS,
+\item Microsoft Word,
+\item Microsoft Excel,
+\item Microsoft PowerPoint.
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Philosophy,
+Painting ,
+Badminton ,
+Music ,  
+Language  and communication ,
+History,
+Swimming
+
+\newpage 
+
+%%%%%%%%%%%%%%%%
+%% Projects %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{Projects}
+{Projects}
+{PDF:Projects}
+
+\Entry
+\begin{itemize}
+	\item Data Structure :
+		\begin{itemize}
+		\item	search engine using inverted index algorithm - C++.
+	     \item   Finite-State Automata - Java
+		\end{itemize}
+		
+	\item Advanced Computer Programming:
+		\begin{itemize}[$\circ$]
+		\item  Implementation of a graphical game (BattleShip-Online) - Java.
+     	\item Implementation of a simple image editor - Java.
+	    \item Implementation of a simple Encryption and encoding System  - Java.
+		\end{itemize}
+		
+	\item Principles of Computer and Programming : 
+	      living cell simulation - C.
+   	\item Logic Design : 
+   	Designing a Traffic Light System -Verilog
+   	\item Computer Architecture and design :
+   		\begin{itemize}
+		\item (Basic Computer),Compiler,Cache,Pipeline(VHDL)
+		\end{itemize}
+		
+     \item Operating Systems:
+     \begin{itemize}
+       \itemMultiprocessing,Multithreading in Windows and Linux(C)
+	
+	
+
+	
+	\item Design Automation:
+		\begin{itemize}
+		\item Phase1:Implementation of a car parking system(VHDL).
+     	\item Phase2:Implementation of a co-software,hardware design using
+     	      Microblaze(VHDL).
+	    \item Phase3:Implementation of a Plant-Watering System with a moisturizing
+	          detection system(VHDL)
+	          
+		\end{itemize}
+			\end{itemize}
+	
+		
+    \item Advanced Mathematics: 
+	    \begin{itemize}
+        \item Phase1:Analyzing Distribution categories of a two class  problem And] PCA(Python,MATLAB)
+		      \item Phase2:
+     	     Facial Recognition with Singular Value Decomposition(Python)
+     	     based on 	\href{https://link.springer.com/chapter/10.1007/978-1-4020-6264-3_26}{paper}
+     \end{itemize}
+      \end{itemize}	
+   
+       	
+
+
+%%%%%%%%%%%%%%%%
+%% Challenges And Self Studies %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{Challenges And Self Studies}
+{Challenges And Self Studies}
+{PDF:Challenges And Self Studies}
+
+\Entry
+\begin{itemize}
+
+\item Amirkabir First Data mining Challenge(Fall 2017)
+    	
+   \begin{itemize}
+	   
+     \item Analyzing the bank customer's  information
+     \item Predicting the result
+   
+    \end{itemize}
+	
+		
+
+\item Deca Dataminig challenge, Sharif University of Technology, Winter2018
+	
+\item  I have been working on Data mining and data analysis concepts on \href{http://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf}
+		{Fundamentals if Data mining Concepts}
+
+\item I have been working on \href
+	    {http://www.ias.tu-darmstadt.de/uploads/Publications/Kober_IJRR_2013.pdf}
+	    {This Paper} as my Representation and Research Course project,2017
+	    \item Codeacademy courses , 2015-2017
+        \item Coursera Machinelearning course By Andrew NG,University of Stanford,Fall 2017.
+        \item Kaggle Machine Learning and Deep Learning Course(Winter 2018)
+        \item Coursera Deep Learning and Neural Network,University of Toronto
+       	\end{itemize}
+
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{References}
+{References}
+{PDF:References}
+
+
+\Entry
+All Available in:
+\newline
+\href{https://github.com/Yasaman1997}
+{\textbf{Github}}  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MULTILINGUAL UNICODE EXAMPLES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+
+\end{document}
